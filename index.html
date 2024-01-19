@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="flex">
+
+    <div class="left">
+        
+        <div class="home bg-grey rounded m-1 p-1">
+            <div class="logo">
+                <img class="invert" src="logo.svg" alt="">
+                <div class="close">
+                    <img src="close.svg" alt="">
+                </div>
+            </div>
+            <ul>
+                <li><img class="invert" src="home.svg" alt="Home">Home</li>
+                <li><img class="invert" src="search.svg" alt="">Search</li>
+            </ul>
+        </div>
+        <div class="library bg-grey rounded m-1 p-1">
+            <div class="heading">
+                <img class="invert" src="playlist.svg" alt="">
+                Your Library
+            </div>
+            <div class="songList">
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="footer" data-testid="left-sidebar-legal-links">
+                <a draggable="false" href="https://www.spotify.com/legal/cookies-policy/" target="_blank"
+                    rel="noopener">
+                    <span>Cookies</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="right bg-grey m-1 rounded">
+        <div class="header">
+            <div class="nav">
+                <button class="arrows">
+                    <svg width="33" height="33" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 6L9 12L15 18" stroke="#ffffff" stroke-width="1.5" stroke-miterlimit="16" />
+                    </svg>
+                </button>
+                <button class="arrows">
+                    <svg width="33" height="33" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.00005 6L15 12L9 18" stroke="#ffffff" stroke-width="1.5" stroke-miterlimit="16" />
+                    </svg>
+                </button>
+                <button class="hamburger">
+                    <img src="hamburger.svg" alt="">
+                </button>
+            </div>
+            <div class="buttons">
+                <span class="signupbtn">Signup</span>
+                <button class="loginbtn">Log in</button>
+            </div>
+        </div>
+        <div class="spotifyPlaylists">
+            <h2>Spotify Playlists</h2>
+            <div class="cardContainer">
+                
+
+            </div>
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+                <div class="abovebar">
+                    <marquee behavior="scroll" direction="left" width="230px"><div class="songinfo"></div></marquee>
+                    <div class="songbuttons">
+                        <img id="prev" src="prev.svg" alt="">
+                        <img id="play" src="play.svg" alt="">
+                        <img id="next" src="next.svg" alt="">
+                    </div>
+                    <div>
+                        <div class="songtime"></div>
+                        <div class="volume"><img src="volume.svg" alt="">
+                        <div class="range"><input type="range" name="volume" value="100"></div></div>
+                    </div>
+                    
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
