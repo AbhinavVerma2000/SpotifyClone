@@ -1,0 +1,539 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap");
+
+@media (max-width: 1400px) {
+  .left {
+    position: absolute;
+    left: -100%;
+    transition: left 0.3s;
+    z-index: 1;
+    width: 100%;
+  }
+  .hamburger{
+    display:block;
+  }
+  .arrows {
+    display: none;
+  }
+  .cardContainer {
+    max-height: 40vh;
+    justify-content: center;
+    margin: 0;
+  }
+  .card {
+    width: 100px;
+  }
+  .abovebar {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .seekbar {
+    position: sticky;
+    left: 16px;
+    top: 45px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .close {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+  .right {
+      position: relative;
+      width: 75%;
+  }
+  
+  .left {
+    width: 25%;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  .home ul li {
+    gap: 15px;
+    display: flex;
+    width: 15px;
+    list-style: none;
+    padding-top: 15px;
+    font-weight: 600;
+  }
+  .home {
+    height: 20vh;
+    padding: 10px;
+  }
+  .heading img {
+    margin-top: 2px;
+    width: 20px;
+    height: 20px;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #101010;
+  }
+  .buttons * {
+    margin: 10px;
+    margin-right: 23px;
+  }
+
+  .card img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .card * {
+    padding-top: 3px;
+  }
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px;
+    overflow-y: auto;
+    max-height: 70vh;
+  }
+
+  .signupbtn {
+    font-weight: 600;
+    background-color: #101010;
+    color: rgb(147, 147, 147);
+    font-size: 15px;
+  }
+  .signupbtn:hover {
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .loginbtn {
+    font-weight: 600;
+    background-color: white;
+    border-radius: 30px;
+    padding: 12px 32px;
+    font-size: 15px;
+  }
+  .loginbtn:hover {
+    font-weight: bold;
+    background-color: #f0f0f0;
+    font-size: 16px;
+  }
+  
+  .playbar {
+    margin-left: 10px;
+    min-height: 40px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(52, 52, 52);
+    width: 97.9%;
+    border-radius: 30px;
+  }
+  .songbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  .songList ul li {
+    list-style: decimal;
+    display: flex;
+    cursor: pointer;
+    padding: 12px 12px;
+    font-size: 12px;
+    border: 1px solid white;
+    margin: 12px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  .songList::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  .songList::-webkit-scrollbar-track {
+    opacity: 0;
+  }
+  
+  .songList::-webkit-scrollbar-thumb {
+    background: #444;
+  }
+  
+  .songList::-webkit-scrollbar-thumb:hover {
+    background: #888;
+  }
+  
+  .songList .info {
+    font-size: 0.8rem;
+    width: 200px;
+  }
+  .seekbar {
+    height: 0px;
+    width: 90%;
+    border: 2px solid white;
+    position: absolute;
+    bottom: 85px;
+    left: 65px;
+    cursor: pointer;
+  }
+  .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: white;
+    left: 0%;
+    transition: left 0.5s;
+  }
+  marquee {
+    margin-left: 20px;
+  }
+  .songtime {
+    margin-right: 10px;
+  }
+  
+  
+  .info {
+    word-break: break-all;
+  }
+  .songbuttons img {
+    height: 3rem;
+    width: 3rem;
+  }
+  
+  .abovebar {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav {
+    margin-left: 24px;
+  }
+  .nav button {
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 99px;
+    padding: 1px 4px 0px 4px;
+    border: none;
+  }
+  .spotifyPlaylists h2 {
+    margin-left: 30px;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: initial;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .bg-black {
+    background-color: black;
+    color: white;
+  }
+  .invert {
+    filter: invert(1);
+  }
+  .bg-grey {
+    background-color: #121212;
+  }
+  .rounded {
+    border-radius: 7px;
+  }
+  .p-1 {
+    padding: 10px;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+.right {
+  height: 99vh;
+  position: relative;
+  width: 100%;
+}
+
+
+
+.items-center {
+  align-items: center;
+}
+.home ul li {
+  gap: 15px;
+  display: flex;
+  width: 15px;
+  list-style: none;
+  padding-top: 15px;
+  font-weight: 600;
+}
+.home {
+  padding: 10px;
+}
+.heading {
+  gap: 15px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 5%;
+  list-style: none;
+  padding-top: 15px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.heading img {
+  margin-top: 2px;
+  width: 20px;
+  height: 20px;
+}
+.footer a {
+  font-size: 12px;
+  text-decoration: none;
+  color: rgb(195, 192, 192);
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.library {
+  height: 74vh;
+  align-content: space-between;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #101010;
+}
+.buttons * {
+  margin: 5px;
+  margin-right: 23px;
+}
+.card {
+  cursor: pointer;
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #252525;
+}
+.card img {
+  width: 100%;
+  object-fit: contain;
+}
+.card * {
+  padding-top: 3px;
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 30px;
+  overflow-y: auto;
+  max-height: 70vh;
+}
+
+.card:hover {
+  background-color: rgb(74, 73, 73);
+  transition: all 1s;
+}
+.signupbtn {
+  font-weight: 600;
+  background-color: #101010;
+  color: rgb(147, 147, 147);
+  font-size: 15px;
+}
+.signupbtn:hover {
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+.loginbtn {
+  font-weight: 600;
+  background-color: white;
+  border-radius: 30px;
+  padding: 12px 32px;
+  font-size: 15px;
+}
+.loginbtn:hover {
+  font-weight: bold;
+  background-color: #f0f0f0;
+  font-size: 16px;
+}
+
+.playbar {
+  margin-left: 10px;
+  min-height: 40px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(52, 52, 52);
+  width: 97.9%;
+  border-radius: 30px;
+}
+
+.songList ul li {
+  list-style: decimal;
+  display: flex;
+  cursor: pointer;
+  padding: 12px 12px;
+  font-size: 12px;
+  border: 1px solid white;
+  margin: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.songList {
+  height: 55vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.songList::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.songList::-webkit-scrollbar-track {
+  opacity: 0;
+}
+
+.songList::-webkit-scrollbar-thumb {
+  background: #444;
+}
+
+.songList::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+.songList .info {
+  font-size: 0.8rem;
+  width: 200px;
+}
+.seekbar {
+  border-radius: 2px;
+  height: 0px;
+  width: 90%;
+  border: 2px solid white;
+  position: absolute;
+  cursor: pointer;
+}
+.circle {
+  margin: -6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  background-color: white;
+  left: 0%;
+  transition: left 0.5s;
+}
+.songbuttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.songinfo {
+  width: 250px;
+}
+
+
+.info {
+  word-break: break-all;
+}
+.songbuttons img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.abovebar {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav {
+  margin-left: 24px;
+}
+
+.range input {
+  cursor: pointer;
+} 
+
+.nav button {
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 99px;
+  padding: 1px 4px 0px 4px;
+  border: none;
+}
+.spotifyPlaylists h2 {
+  margin-left: 30px;
+}
+
+.flex {
+  display: flex;
+  justify-content: initial;
+}
+.justify-center {
+  justify-content: center;
+}
+.bg-black {
+  background-color: black;
+  color: white;
+}
+.invert {
+  filter: invert(1);
+}
+.bg-grey {
+  background-color: #121212;
+}
+.rounded {
+  border-radius: 7px;
+}
+.m-1 {
+  margin: 0px 4px;
+}
+.p-1 {
+  padding: 10px;
+}
+.volume {
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+.left {
+  height: calc(100vh - 20px);
+}
+.cardlabel {
+  font-weight: 600;
+  font-size: 15;
+}
+.carddes {
+  color: rgb(128, 128, 128);
+  font-size: 14px;
+}
