@@ -16,7 +16,7 @@ function sectomin(sec) {
 
 async function getSongs(folder) {
   currFolder = folder;
-  let a = await fetch(`/songs/${currFolder}/`);
+  let a = await fetch(`songs/${currFolder}/`);
   let response = await a.text();
   let div = document.createElement("div");
   div.innerHTML = response;
@@ -51,7 +51,7 @@ async function getSongs(folder) {
 }
 
 const playMusic = (track, pause = false) => {
-  currentSong.src = `/songs/${currFolder}/` + track;
+  currentSong.src = `songs/${currFolder}/` + track;
   if (!pause) {
     currentSong.play();
     play.src = "pause.svg";
@@ -61,7 +61,7 @@ const playMusic = (track, pause = false) => {
 };
 
 async function displayAlbums() {
-  let a = await fetch(`/songs/`);
+  let a = await fetch(`songs/`);
   let response = await a.text();
   let div = document.createElement("div");
   div.innerHTML = response;
@@ -78,7 +78,7 @@ async function displayAlbums() {
         cardContainer.innerHTML +
         `<div data-folder="${folder}" class="card">
         
-        <img src="/songs/${folder}/cover.jpg"
+        <img src="songs/${folder}/cover.jpg"
             alt="">
             <p class="cardlabel">${response.title}</p>
             <p class="carddes">${response.description}</p>
